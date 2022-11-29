@@ -19,31 +19,39 @@
     <nav></nav>
 
     <!-- HERO -->
-    <section id="hero" class="" style="height: calc(100vh - 72px)">
+    <section id="hero" class="Hero lg:h-fit">
       <div class="relative w-full h-full">
-        <figure class="w-full h-full">
+        <figure
+          class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+        >
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover lg:hidden"
             src="./src/img/sanFrancisco.jpg"
             alt="San Francisco background"
           />
         </figure>
         <div
-          class="absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center px-5 py-10"
+          class="absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center px-5 py-10 lg:items-start lg:justify-center"
         >
           <input
-            class="outline-none p-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+            class="outline-none p-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
             type="search"
             name="search"
             id="search"
             placeholder="San Francisco"
           />
-          <button
-            class="w-40 bg-white text-md text-primary font-semibold py-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110"
-            type="button"
-          >
-            Explore More
-          </button>
+          <div>
+            <h1 class="hidden lg:flex text-4xl font-bold mb-6">
+              Find More Locations <br />
+              like this
+            </h1>
+            <button
+              class="w-40 bg-white text-md text-primary font-semibold py-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110"
+              type="button"
+            >
+              Explore More
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -88,6 +96,13 @@
             <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
               <p class="text-white text-bold text-xl">Switzerland</p>
               <p class="text-white text-sm">Big City</p>
+            </div>
+          </article>
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-sydney bg-cover"></figure>
+            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+              <p class="text-bold text-xl">Sydney</p>
+              <p class="text-sm">Get to know the famous Opera</p>
             </div>
           </article>
         </div>
@@ -188,7 +203,7 @@
     <!-- TAB_BAR -->
     <div
       id="tab_bar"
-      class="fixed bottom-0 left-0 right-0 w-full h-16 bg-white shadow-md flex gap-6 justify-center items-center"
+      class="fixed bottom-0 left-0 right-0 w-full h-16 bg-white shadow-md flex gap-6 justify-center items-center lg:hidden"
     >
       <a href="#hero">
         <svg
