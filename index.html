@@ -34,14 +34,14 @@
           class="absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center px-5 py-10"
         >
           <input
-            class="outline-none p-3 rounded-full shadow-sm"
+            class="outline-none p-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out focus-within:shadow-sm focus:ring-2 focus:w-11/12"
             type="search"
             name="search"
             id="search"
             placeholder="San Francisco"
           />
           <button
-            class="w-40 bg-white text-md text-primary font-semibold py-3 rounded-full shadow-sm"
+            class="w-40 bg-white text-md text-primary font-semibold py-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110"
             type="button"
           >
             Explore More
@@ -52,14 +52,47 @@
 
     <main>
       <!-- RECOMENDATIONS -->
-      <section id="recomendations" class="p-20">
-        <article class="Card">
-          <figure class="w-full h-3/5 bg-norway bg-cover"></figure>
-          <div class="w-full h-2/5 bg-secondary px-4 py-3">
-            <p class="text-white text-bold text-xl">Norway</p>
-            <p class="text-white text-sm">Beautiful landscapes</p>
-          </div>
-        </article>
+      <section id="recomendations" class="p-6">
+        <h2 class="text-2xl font-semibold text-primary">Our Recomendations</h2>
+        <div
+          class="w-auto h-72 flex items-center space-x-6 mt-6 overflow-x-auto overscroll-x-contain"
+        >
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-norway bg-cover"></figure>
+            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+              <p class="text-white text-bold text-xl">Norway</p>
+              <p class="text-white text-sm">Beautiful landscapes</p>
+            </div>
+          </article>
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-new_york bg-cover"></figure>
+            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+              <p class="text-bold text-xl">New York</p>
+              <p class="text-sm">Concrete jungle</p>
+            </div>
+          </article>
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-yosemite bg-cover"></figure>
+            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+              <p class="text-white text-bold text-xl">Yosemite</p>
+              <p class="text-white text-sm">A break from the world</p>
+            </div>
+          </article>
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-seattle bg-cover"></figure>
+            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+              <p class="text-bold text-xl">Seattle</p>
+              <p class="text-sm">Big City</p>
+            </div>
+          </article>
+          <article class="Card">
+            <figure class="w-full h-3/5 bg-switzerland bg-cover"></figure>
+            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+              <p class="text-white text-bold text-xl">Switzerland</p>
+              <p class="text-white text-sm">Big City</p>
+            </div>
+          </article>
+        </div>
       </section>
       <!-- TRENDING -->
       <section id="trending"></section>
