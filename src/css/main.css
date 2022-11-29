@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.SectionTitle {
+  @apply text-2xl lg:text-3xl font-semibold text-primary dark:text-white;
+}
+
 .Card {
   @apply w-48 h-64 lg:w-64 lg:h-80 bg-red-200 shadow-lg rounded-lg overflow-hidden flex-none transition transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+.Card:nth-child(odd) > div {
+  @apply bg-secondary w-full h-2/5 text-white px-4 py-3 dark:bg-gray-700;
+}
+.Card:nth-child(even) > div {
+  @apply w-full h-2/5 bg-white text-tertiary px-4 py-3 dark:bg-gray-800 dark:text-white;
 }
 
 .CardTitle {

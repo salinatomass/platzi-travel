@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="html">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -14,9 +14,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-Montserrat mb-16 lg:mb-0 scroll-smooth">
+  <body class="font-Montserrat mb-16 lg:mb-0 scroll-smooth dark:bg-gray-900">
     <!-- NAVBAR -->
-    <nav class="hidden lg:block bg-white text-primary font-bold shadow-lg">
+    <nav
+      class="hidden lg:block bg-white dark:bg-gray-900 text-primary dark:text-white font-bold shadow-lg"
+    >
       <div
         class="max-w-7xl m-auto p-6 flex justify-between items-center gap-x-10"
       >
@@ -41,7 +43,7 @@
           </li>
         </ul>
 
-        <button type="button">
+        <button type="button" class="toggleDarkButton">
           <svg
             width="25"
             height="25"
@@ -50,7 +52,7 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              class="fill-current text-primary"
+              class="fill-current text-primary dark:text-white"
               fill="none"
               d="M25.0748 19.2748C22.9267 20.2465 20.5334 20.5405 18.214 20.1177C15.8945 19.6949 13.7589 18.5753 12.0918 16.9082C10.4246 15.241 9.30509 13.1055 8.88228 10.786C8.45946 8.46654 8.75347 6.0733 9.72512 3.92514C8.01494 4.69801 6.51777 5.87422 5.36208 7.35288C4.20638 8.83154 3.42666 10.5685 3.08979 12.4147C2.75293 14.261 2.86898 16.1614 3.428 17.9529C3.98702 19.7444 4.97232 21.3736 6.29935 22.7006C7.62639 24.0276 9.25556 25.0129 11.0471 25.572C12.8386 26.131 14.739 26.247 16.5852 25.9102C18.4315 25.5733 20.1684 24.7936 21.6471 23.6379C23.1257 22.4822 24.302 20.985 25.0748 19.2748V19.2748Z"
             />
@@ -87,7 +89,7 @@
               like this
             </h1>
             <button
-              class="w-40 bg-white text-md text-primary font-semibold py-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110"
+              class="w-40 bg-white text-md text-primary dark:text-black font-semibold py-3 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110"
               type="button"
             >
               Explore More
@@ -100,50 +102,48 @@
     <main>
       <!-- RECOMENDATIONS -->
       <section id="locations" class="max-w-7xl m-auto p-6">
-        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">
-          Our Recomendations
-        </h2>
+        <h2 class="SectionTitle">Our Recomendations</h2>
         <div
           class="w-auto h-72 lg:h-96 flex items-center space-x-6 mt-6 overflow-x-auto overscroll-x-contain"
         >
           <article class="Card">
             <figure class="w-full h-3/5 bg-norway bg-cover"></figure>
-            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+            <div>
               <p class="text-white text-bold text-xl">Norway</p>
               <p class="text-white text-sm">Beautiful landscapes</p>
             </div>
           </article>
           <article class="Card">
             <figure class="w-full h-3/5 bg-new_york bg-cover"></figure>
-            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+            <div>
               <p class="text-bold text-xl">New York</p>
               <p class="text-sm">Concrete jungle</p>
             </div>
           </article>
           <article class="Card">
             <figure class="w-full h-3/5 bg-yosemite bg-cover"></figure>
-            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+            <div>
               <p class="text-white text-bold text-xl">Yosemite</p>
               <p class="text-white text-sm">A break from the world</p>
             </div>
           </article>
           <article class="Card">
             <figure class="w-full h-3/5 bg-seattle bg-cover"></figure>
-            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+            <div>
               <p class="text-bold text-xl">Seattle</p>
               <p class="text-sm">Big City</p>
             </div>
           </article>
           <article class="Card">
             <figure class="w-full h-3/5 bg-switzerland bg-cover"></figure>
-            <div class="w-full h-2/5 bg-secondary text-white px-4 py-3">
+            <div>
               <p class="text-white text-bold text-xl">Switzerland</p>
               <p class="text-white text-sm">Big City</p>
             </div>
           </article>
           <article class="Card">
             <figure class="w-full h-3/5 bg-sydney bg-cover"></figure>
-            <div class="w-full h-2/5 bg-white text-tertiary px-4 py-3">
+            <div>
               <p class="text-bold text-xl">Sydney</p>
               <p class="text-sm">Get to know the famous Opera</p>
             </div>
@@ -152,9 +152,7 @@
       </section>
       <!-- TRENDING -->
       <section id="stays" class="max-w-7xl m-auto p-6">
-        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">
-          Trending Stays
-        </h2>
+        <h2 class="SectionTitle">Trending Stays</h2>
 
         <div
           class="w-full h-full flex flex-col space-y-6 mt-6 lg:grid lg:grid-cols-6 lg:gap-x-6 lg:text-end"
@@ -194,35 +192,39 @@
         </div>
       </section>
       <!-- FAQs -->
-      <section id="faqs" class="max-w-7xl m-auto p-6">
-        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">FAQs</h2>
+      <section id="faqs" class="max-w-7xl m-auto p-6 pb-10">
+        <h2 class="SectionTitle">FAQs</h2>
         <ul class="flex flex-col space-y-4 mt-6">
           <li>
-            <p class="text-primary text-xl font-semibold">Payment Methods</p>
-            <p class="font-medium text-md pt-2">
+            <p class="text-primary text-xl font-semibold dark:text-white">
+              Payment Methods
+            </p>
+            <p class="font-medium text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance
             </p>
           </li>
           <li>
-            <p class="text-primary text-xl font-semibold">
+            <p class="text-primary text-xl font-semibold dark:text-white">
               Cancellation Policy
             </p>
-            <p class="font-medium text-md pt-2">
+            <p class="font-medium text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance
             </p>
           </li>
           <li>
-            <p class="text-primary text-xl font-semibold">Long Stays</p>
-            <p class="font-medium text-md pt-2">
+            <p class="text-primary text-xl font-semibold dark:text-white">
+              Long Stays
+            </p>
+            <p class="font-medium text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance
               We accept VISA, MasterCard, American Express, Paypal and Binance
             </p>
           </li>
           <li>
-            <p class="text-primary text-xl font-semibold">
+            <p class="text-primary text-xl font-semibold dark:text-white">
               Cancellation Policy
             </p>
-            <p class="font-medium text-md pt-2">
+            <p class="font-medium text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance
             </p>
           </li>
@@ -231,7 +233,10 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="about" class="bg-gray-50 text-gray-400">
+    <footer
+      id="about"
+      class="bg-gray-50 dark:bg-white text-gray-400 dark:text-gray-900"
+    >
       <div class="max-w-7xl w-full m-auto p-6 space-y-4">
         <h2 class="text-lg lg:text-xl font-semibold">About us</h2>
         <ul class="space-y-2">
@@ -260,7 +265,7 @@
     <!-- TAB_BAR -->
     <div
       id="tab_bar"
-      class="fixed bottom-0 left-0 right-0 w-full h-16 bg-white shadow-md flex gap-6 justify-center items-center lg:hidden"
+      class="fixed bottom-0 left-0 right-0 w-full h-16 bg-white shadow-md flex gap-6 justify-center items-center lg:hidden dark:bg-neutral-900"
     >
       <a href="#home">
         <svg
@@ -271,7 +276,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            class="fill-current text-gray-300"
+            class="fill-current text-gray-300 dark:text-gray-500"
             d="M10.707 2.29303C10.5195 2.10556 10.2652 2.00024 10 2.00024C9.73488 2.00024 9.48057 2.10556 9.29304 2.29303L2.29304 9.29303C2.11088 9.48163 2.01009 9.73423 2.01237 9.99643C2.01465 10.2586 2.11981 10.5094 2.30522 10.6948C2.49063 10.8803 2.74144 10.9854 3.00364 10.9877C3.26584 10.99 3.51844 10.8892 3.70704 10.707L4.00004 10.414V17C4.00004 17.2652 4.1054 17.5196 4.29293 17.7071C4.48047 17.8947 4.73482 18 5.00004 18H7.00004C7.26526 18 7.51961 17.8947 7.70715 17.7071C7.89468 17.5196 8.00004 17.2652 8.00004 17V15C8.00004 14.7348 8.1054 14.4805 8.29293 14.2929C8.48047 14.1054 8.73482 14 9.00004 14H11C11.2653 14 11.5196 14.1054 11.7071 14.2929C11.8947 14.4805 12 14.7348 12 15V17C12 17.2652 12.1054 17.5196 12.2929 17.7071C12.4805 17.8947 12.7348 18 13 18H15C15.2653 18 15.5196 17.8947 15.7071 17.7071C15.8947 17.5196 16 17.2652 16 17V10.414L16.293 10.707C16.4816 10.8892 16.7342 10.99 16.9964 10.9877C17.2586 10.9854 17.5095 10.8803 17.6949 10.6948C17.8803 10.5094 17.9854 10.2586 17.9877 9.99643C17.99 9.73423 17.8892 9.48163 17.707 9.29303L10.707 2.29303Z"
             fill="none"
           />
@@ -286,7 +291,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            class="fill-current text-primary"
+            class="fill-current text-primary dark:text-white"
             fill="none"
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -303,7 +308,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            class="fill-current text-gray-300"
+            class="fill-current text-gray-300 dark:text-gray-500"
             fill="none"
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -311,7 +316,7 @@
           />
         </svg>
       </a>
-      <button type="button">
+      <button type="button" class="toggleDarkButton">
         <svg
           width="30"
           height="30"
@@ -320,7 +325,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            class="fill-current text-gray-300"
+            class="fill-current text-gray-300 dark:text-gray-500"
             fill="none"
             d="M25.0748 19.2748C22.9267 20.2465 20.5334 20.5405 18.214 20.1177C15.8945 19.6949 13.7589 18.5753 12.0918 16.9082C10.4246 15.241 9.30509 13.1055 8.88228 10.786C8.45946 8.46654 8.75347 6.0733 9.72512 3.92514C8.01494 4.69801 6.51777 5.87422 5.36208 7.35288C4.20638 8.83154 3.42666 10.5685 3.08979 12.4147C2.75293 14.261 2.86898 16.1614 3.428 17.9529C3.98702 19.7444 4.97232 21.3736 6.29935 22.7006C7.62639 24.0276 9.25556 25.0129 11.0471 25.572C12.8386 26.131 14.739 26.247 16.5852 25.9102C18.4315 25.5733 20.1684 24.7936 21.6471 23.6379C23.1257 22.4822 24.302 20.985 25.0748 19.2748V19.2748Z"
           />
