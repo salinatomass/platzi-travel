@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-Montserrat mb-16 scroll-smooth">
+  <body class="font-Montserrat mb-16 lg:mb-0 scroll-smooth">
     <!-- NAVBAR -->
     <nav></nav>
 
@@ -40,8 +40,8 @@
             id="search"
             placeholder="San Francisco"
           />
-          <div>
-            <h1 class="hidden lg:flex text-4xl font-bold mb-6">
+          <div class="lg:w-full lg:max-w-7xl lg:m-auto lg:p-6">
+            <h1 class="hidden lg:flex text-5xl font-bold mb-6">
               Find More Locations <br />
               like this
             </h1>
@@ -58,10 +58,12 @@
 
     <main>
       <!-- RECOMENDATIONS -->
-      <section id="recomendations" class="p-6">
-        <h2 class="text-2xl font-semibold text-primary">Our Recomendations</h2>
+      <section id="recomendations" class="max-w-7xl m-auto p-6">
+        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">
+          Our Recomendations
+        </h2>
         <div
-          class="w-auto h-72 flex items-center space-x-6 mt-6 overflow-x-auto overscroll-x-contain"
+          class="w-auto h-72 lg:h-96 flex items-center space-x-6 mt-6 overflow-x-auto overscroll-x-contain"
         >
           <article class="Card">
             <figure class="w-full h-3/5 bg-norway bg-cover"></figure>
@@ -108,39 +110,51 @@
         </div>
       </section>
       <!-- TRENDING -->
-      <section id="trending" class="p-6">
-        <h2 class="text-2xl font-semibold text-primary">Trending Stays</h2>
+      <section id="trending" class="max-w-7xl m-auto p-6">
+        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">
+          Trending Stays
+        </h2>
 
-        <div class="w-full h-full flex flex-col space-y-6 mt-6">
-          <article class="w-full h-96 bg-chicago bg-cover rounded-xl">
+        <div
+          class="w-full h-full flex flex-col space-y-6 mt-6 lg:grid lg:grid-cols-6 lg:gap-x-6 lg:text-end"
+        >
+          <article
+            class="w-full h-96 bg-chicago bg-cover rounded-xl lg:col-span-full"
+          >
             <p class="CardTitle">Chicago</p>
-            <p class="text-sm pl-8 text-white mr-24">
+            <p class="text-sm pl-8 text-white mr-24 lg:mr-8 lg:text-lg">
               2 rooms, bathroom and kitchen.
             </p>
           </article>
-          <article class="w-full h-96 bg-LA bg-cover rounded-xl">
+          <article
+            class="w-full h-96 bg-LA bg-cover rounded-xl lg:col-span-2 lg:row-span-2 lg:h-auto lg:mb-2"
+          >
             <p class="CardTitle">Los Angeles</p>
-            <p class="text-sm pl-8 text-white mr-24">
+            <p class="text-sm pl-8 text-white mr-24 lg:mr-8 lg:text-lg">
               4 rooms, 3 bathrooms, kitchen and private pool.
             </p>
           </article>
-          <article class="w-full h-96 bg-miami bg-cover rounded-xl">
+          <article
+            class="w-full h-96 bg-miami bg-cover rounded-xl lg:col-span-4"
+          >
             <p class="CardTitle">Miami</p>
-            <p class="text-sm pl-8 text-white mr-24">
+            <p class="text-sm pl-8 text-white mr-24 lg:mr-8 lg:text-lg">
               3 rooms, 2 bathrooms, kitchen and amazing sea view.
             </p>
           </article>
-          <article class="w-full h-96 bg-bali bg-cover rounded-xl">
+          <article
+            class="w-full h-96 bg-bali bg-cover rounded-xl lg:col-span-4"
+          >
             <p class="CardTitle">Bali</p>
-            <p class="text-sm pl-8 text-white mr-24">
+            <p class="text-sm pl-8 text-white mr-24 lg:mr-8 lg:text-lg">
               2 rooms, 2 bathrooms, kitchen and private pool.
             </p>
           </article>
         </div>
       </section>
       <!-- FAQs -->
-      <section id="faqs" class="p-6">
-        <h2 class="text-2xl font-semibold text-primary">FAQs</h2>
+      <section id="faqs" class="max-w-7xl m-auto p-6">
+        <h2 class="text-2xl lg:text-3xl font-semibold text-primary">FAQs</h2>
         <ul class="flex flex-col space-y-4 mt-6">
           <li>
             <p class="text-primary text-xl font-semibold">Payment Methods</p>
@@ -176,28 +190,30 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-50 text-gray-400 p-6 space-y-4">
-      <h2 class="text-lg font-semibold">About us</h2>
-      <ul class="space-y-2">
-        <li>
-          <a href="#" class="text-sm block">Investors</a>
-        </li>
-        <li>
-          <a href="#" class="text-sm block">Jobs</a>
-        </li>
-        <li>
-          <a href="#" class="text-sm block">Privacy policy</a>
-        </li>
-        <li>
-          <a href="#" class="text-sm block">Terms and Conditions</a>
-        </li>
-        <li>
-          <a href="#" class="text-sm block">Platzi Travel, inc</a>
-        </li>
-        <li>
-          <a href="#" class="text-sm block">Follow Us</a>
-        </li>
-      </ul>
+    <footer class="bg-gray-50 text-gray-400">
+      <div class="max-w-7xl w-full m-auto p-6 space-y-4">
+        <h2 class="text-lg lg:text-xl font-semibold">About us</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="text-sm block">Investors</a>
+          </li>
+          <li>
+            <a href="#" class="text-sm block">Jobs</a>
+          </li>
+          <li>
+            <a href="#" class="text-sm block">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#" class="text-sm block">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="#" class="text-sm block">Platzi Travel, inc</a>
+          </li>
+          <li>
+            <a href="#" class="text-sm block">Follow Us</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <!-- TAB_BAR -->
